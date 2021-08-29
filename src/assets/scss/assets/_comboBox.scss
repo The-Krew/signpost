@@ -1,0 +1,13 @@
+.combo-select {
+  width: max-content;
+  height: max-content;
+  display: flex;
+  padding: auto;
+  justify-content: center;
+  vertical-align: middle;
+
+  .combo-text {
+    margin-left: 2pt;
+    text-align: center;
+  }
+}

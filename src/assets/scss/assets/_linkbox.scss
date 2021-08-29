@@ -1,0 +1,51 @@
+
+@import "./variables";
+
+// Variables
+$inputNameSize: 30%;
+$inputTextSpace: 20pt;
+
+.form-linkbox {
+    overflow: hidden;
+    padding: 10pt;
+
+    // Size
+    max-width: 500pt;
+
+    // Background
+    background-color: $dark-theme-gray;
+    border: 1px solid $border-gray;
+
+    // Border
+    border-left: 6pt solid $layout-blue;
+    border-radius: 20pt;
+
+    input[type=text] {
+        background-color: $gray-700;
+        line-height: 25pt;
+        border-radius: 7pt;
+        border: none;
+    }
+
+    .form-inputs {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .input-text {
+            display: flex;
+            justify-content: space-between;
+            width: 75%;
+
+            .input-name {
+                width: $inputNameSize;
+            }
+            .input-url {
+                width: calc(100% - #{$inputTextSpace} - #{$inputNameSize});
+            }
+        }
+    }
+    .submit-button {
+        float: right;
+    }
+}

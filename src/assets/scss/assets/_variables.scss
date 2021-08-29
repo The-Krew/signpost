@@ -1,3 +1,18 @@
+// Custom variables
+$layout-lighter-blue: #15adf8;
+$layout-blue: #119ce2;
+$layout-darker-blue: #0e80b9;
+$dark-theme-gray: #0b0e3d;
+$border-gray: #124980;
+
+// Fonts
+$h1-size: 20pt;
+$h2-size: calc(#{$h1-size} * 0.85);
+$h3-size: calc(#{$h1-size} * 0.75);
+$p-size: 13pt;
+
+$font-color: #e6e6e6;
+
 // Color system
 
 $white: #ffffff !default;

@@ -1,13 +1,18 @@
+
+@import "_variables.scss";
+
 .combo-select {
+  margin: 5pt 0;
+  margin-right: 5pt;
   width: max-content;
   height: max-content;
   display: flex;
   padding: auto;
   justify-content: center;
-  vertical-align: middle;
 
   .combo-text {
-    margin-left: 2pt;
+    margin-left: 3pt;
+    vertical-align: middle;
     text-align: center;
   }
 }

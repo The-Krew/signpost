@@ -3,6 +3,15 @@
  ---
 
 ## Updates
+
+* **version 0.1.2**
+```
+    + added _linkbox.scss
+    + created styling for linkbox component
+    + added general.scss
+    - removed index.css
+```
+
 * **version 0.1.1**
 ```
     + @SVG folder added

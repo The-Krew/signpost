@@ -5,12 +5,16 @@ const Linkbox = () => {
 
     return (
         <>
-            <div>
-
-                <input type="text" placeholder="Name"/>
-                <input type="text" placeholder="URL"/>
-                <ComboBox />
-            </div>
+            <form className='form-linkbox'>
+                <div className='form-inputs'>
+                    <ComboBox />
+                    <div className='input-text'>
+                        <input type="text" placeholder="Name" className='input-name' />
+                        <input type="text" placeholder="URL" className='input-url' />
+                    </div>
+                </div>
+                <button type='submit' className='submit-button'>Přidat</button>
+            </form>
         </>
     );
 }

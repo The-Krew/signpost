@@ -43,7 +43,6 @@ const ComboBox = () => {
     return (
         <>
             <form>
-
                 <Select 
                     className="combo-select"
                     defaultValue={ statusOptions[0] }

@@ -13,7 +13,7 @@ const Linkbox = () => {
                         <input type="text" placeholder="URL" className='input-url' />
                     </div>
                 </div>
-                <button type='submit' className='submit-button'>Přidat</button>
+                <button type='submit' className='form-submit'>Přidat</button>
             </form>
         </>
     );

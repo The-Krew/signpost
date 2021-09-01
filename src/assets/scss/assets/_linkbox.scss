@@ -4,11 +4,11 @@
 // Variables
 $inputNameSize: 30%;
 $inputTextSpace: 20pt;
+$borderRadius: 4px;
 
 .form-linkbox {
-    overflow: hidden;
-    padding: 10pt;
-
+    padding: 1em;
+    height: 6em;
     // Size
     max-width: 500pt;
 
@@ -18,14 +18,20 @@ $inputTextSpace: 20pt;
 
     // Border
     border-left: 6pt solid $layout-blue;
-    border-radius: 20pt;
+    border-radius: $borderRadius;
 
     input[type=text] {
-        background-color: $gray-700;
+        background-color: $gray-300;
+        color: black;
         line-height: 25pt;
-        border-radius: 7pt;
+        height: $input-height;
+        border-radius: $borderRadius;
         border: none;
     }
+    input[type=text]:active {
+            border: none;
+        }
+    
 
     .form-inputs {
         display: flex;
@@ -45,7 +51,9 @@ $inputTextSpace: 20pt;
             }
         }
     }
-    .submit-button {
+    .form-submit {
+        border-radius: $borderRadius;
+        font-weight: 500;
         float: right;
     }
 }

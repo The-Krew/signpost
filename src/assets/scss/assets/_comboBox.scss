@@ -4,11 +4,14 @@
 .combo-select {
   margin: 5pt 0;
   margin-right: 5pt;
+  padding: 3pt;
   width: max-content;
-  height: max-content;
+  // max-height: max-content;
+  height: $input-height;
   display: flex;
   padding: auto;
   justify-content: center;
+  z-index: 1;
 
   .combo-text {
     margin-left: 3pt;

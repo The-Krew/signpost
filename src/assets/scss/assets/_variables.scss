@@ -1,6 +1,8 @@
 // Form inputs
-$input-height: 50pt;
+$input-height-default: 35pt;
+$input-height: $input-height-default + 10pt;
 
+$line-height: 25pt;
 // Custom variables
 $layout-lighter-blue: #15adf8;
 $layout-blue: #119ce2;

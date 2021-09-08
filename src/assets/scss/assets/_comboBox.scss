@@ -1,21 +1,18 @@
 
 @import "_variables.scss";
 
-.combo-select {
-  margin: 5pt 0;
-  margin-right: 5pt;
-  padding: 3pt;
-  width: max-content;
-  // max-height: max-content;
-  height: $input-height;
-  display: flex;
-  padding: auto;
-  justify-content: center;
-  z-index: 1;
+.combo-slot{
+  padding: 5pt;
+}
 
+.combo-control {
+  height: $input-height + 10pt;
+
+  .combo-span {
+    height: 100%;
+  }
   .combo-text {
-    margin-left: 3pt;
-    vertical-align: middle;
-    text-align: center;
+    padding-left: 3pt;
+    width: max-content;
   }
 }

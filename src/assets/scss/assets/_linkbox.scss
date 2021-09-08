@@ -6,6 +6,7 @@ $inputNameSize: 30%;
 $inputTextSpace: 20pt;
 $borderRadius: 4px;
 
+
 .form-linkbox {
     padding: 1em;
     height: 6em;
@@ -23,7 +24,7 @@ $borderRadius: 4px;
     input[type=text] {
         background-color: $gray-300;
         color: black;
-        line-height: 25pt;
+        line-height: $line-height;
         height: $input-height;
         border-radius: $borderRadius;
         border: none;

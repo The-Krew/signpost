@@ -1,6 +1,8 @@
 // Form inputs
-$input-height-default: 35pt;
-$input-height: $input-height-default + 10pt;
+$input-height: 1.5em;
+$button-height: 1em + $input-height;
+$form-padding: 1em;
+$input-radius: 4px;
 
 $line-height: 25pt;
 // Custom variables

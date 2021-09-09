@@ -3,6 +3,15 @@
  ---
 
 ## Updates
+* **version 0.1.4**
+```
+    + Added bootstrap
+    + ThemeWrapper added and themes in scss
+    + Added Admin layout POINT
+    + Added routes.js
+    * Linkbox redo -> The linkbox was rebuild to use bootstrap
+```
+
 * **version 0.1.3**
 ```
     * changed styling to linkbox

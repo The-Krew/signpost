@@ -5,7 +5,7 @@ import { Col, Row } from "reactstrap";
 const ComboBox = () => {
     const CustomeControl = props => (
         <div className="combo-slot">
-            <components.Control {...props} className="combo-control" />
+            <components.Control {...props} className="combo-control" style={{borderRadius: 4}} />
         </div>
     );
 
@@ -56,7 +56,6 @@ const ComboBox = () => {
                     options={statusOptions}
                     theme={theme => ({
                         ...theme,
-                        borderRadius: 0,
                         colors: {
                             ...theme.colors,
                             primary25: 'lightblue',

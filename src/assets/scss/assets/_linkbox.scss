@@ -1,60 +1,40 @@
-
 @import "./variables";
 
-// Variables
-$inputNameSize: 30%;
-$inputTextSpace: 20pt;
-$borderRadius: 4px;
-
-
 .form-linkbox {
-    padding: 1em;
-    height: 6em;
-    // Size
-    max-width: 500pt;
+  font-weight: 600;
+  //padding / margin
+  padding: $form-padding;
 
-    // Background
-    background-color: $dark-theme-gray;
-    border: 1px solid $border-gray;
+  // size
+  height: max-content;
+  //   width: 50em;
 
-    // Border
-    border-left: 6pt solid $layout-blue;
-    border-radius: $borderRadius;
+  // Background
+  border: 1px solid $border-gray;
 
-    input[type=text] {
-        background-color: $gray-300;
-        color: black;
-        line-height: $line-height;
-        height: $input-height;
-        border-radius: $borderRadius;
-        border: none;
+  // Border
+  border-left: 6pt solid $layout-blue;
+  border-radius: $input-radius;
+
+  input[type="text"] {
+    font-weight: 600;
+    background-color: $gray-300;
+    color: black;
+    line-height: $line-height;
+    width: 100%;
+    border-radius: $input-radius;
+    border: solid 2px transparent;
+    &:focus {
+      outline-width: 0;
+      border: solid 2px darkcyan;
     }
-    input[type=text]:active {
-            border: none;
-        }
-    
+  }
 
-    .form-inputs {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-
-        .input-text {
-            display: flex;
-            justify-content: space-between;
-            width: 75%;
-
-            .input-name {
-                width: $inputNameSize;
-            }
-            .input-url {
-                width: calc(100% - #{$inputTextSpace} - #{$inputNameSize});
-            }
-        }
-    }
-    .form-submit {
-        border-radius: $borderRadius;
-        font-weight: 500;
-        float: right;
-    }
+  .form-submit {
+    margin-top: 1em;
+    height: $button-height;
+    border-radius: $input-radius;
+    font-weight: 500;
+    float: right;
+  }
 }

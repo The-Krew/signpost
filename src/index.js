@@ -1,25 +1,26 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { Container, Row, Col } from 'reactstrap';
+import { BrowserRouter, Route, Switch, Redirect } from "react-router-dom";
+
+
 import './assets/scss/index.scss';
-import ComboBox from './components/comboBox.';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 import Linkbox from "./components/linkbox";
+import AdminLayout from "./layouts/admin/admin";
+import ThemeContextWrapper from './components/theme/themeWrapper';
 
 ReactDOM.render(
   <React.StrictMode>
     <>
-      <Container>
-        <Row>
-          <Col xs="3" />
-          {/* <ComboBox />
-          </Col> */}
-          <Col xs="6">
-            <Linkbox></Linkbox>
-          </Col>
-          <Col xs="3" />
-        </Row>
-      </Container>
+      <ThemeContextWrapper>
+        <BrowserRouter>
+          <Switch>
+            <Route path="/admin" render={(props) => <AdminLayout {...props} />} />
+            <Redirect from="/" to="/admin" />
+          </Switch>
+        </BrowserRouter>
+      </ThemeContextWrapper>
     </>
   </React.StrictMode>,
   document.getElementById('root')

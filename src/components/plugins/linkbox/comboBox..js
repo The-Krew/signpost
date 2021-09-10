@@ -1,5 +1,5 @@
 import Select, { components } from "react-select";
-import { At, Discord, Drive, Facebook, Github, Gmail, Instagram, LinkedIn, Messenger, Patreon, Pinterest, Private, Reddit, Site, Snapchat, Spotify, Steam, Telegram, Tiktok, Twitch, Twitter, Ubisoft, Vercel, Vimeo, Youtube } from "../assets/@svg/react/solid/"
+import { At, Discord, Drive, Facebook, Github, Gmail, Instagram, LinkedIn, Messenger, Patreon, Pinterest, Private, Reddit, Site, Snapchat, Spotify, Steam, Telegram, Tiktok, Twitch, Twitter, Ubisoft, Vercel, Vimeo, Youtube } from "../../../assets/@svg/react/solid"
 import { Col, Row } from "reactstrap";
 
 const ComboBox = () => {
@@ -12,9 +12,9 @@ const ComboBox = () => {
     const customSingleValue = ({ data }) => (
         <>
             {data.icon}
-            <span className="combo-text">
+            {/* <span className="combo-text">
                 {data.label}
-            </span>
+            </span> */}
         </>
     );
     let width = "25px";

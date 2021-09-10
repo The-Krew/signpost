@@ -3,6 +3,15 @@
  ---
 
 ## Updates
+* **version 0.1.6**
+```
+    + public/full/ has been added.
+    + icon.png full resolution of favicon has been added
+    * linkbox common view added.
+    * favicon has been changed.
+    + svg loader plugin added
+
+```
 * **version 0.1.5**
 ```
     + theme.plugin has been added.

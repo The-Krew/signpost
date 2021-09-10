@@ -2,11 +2,9 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import { BrowserRouter, Route, Switch, Redirect } from "react-router-dom";
 
-
 import './assets/scss/index.scss';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
-import Linkbox from "./components/linkbox";
 import AdminLayout from "./layouts/admin/admin";
 import ThemeContextWrapper from './components/theme/themeWrapper';
 

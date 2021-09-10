@@ -1,42 +1,38 @@
 import React from "react";
-import { Route, Switch, Redirect, useLocation } from "react-router-dom";
-// javascript plugin used to create scrollbars on windows
-import PerfectScrollbar from "perfect-scrollbar";
-
-// core components
-// import FixedPlugin from "components/FixedPlugin/FixedPlugin.js";
-
-import routes from "../../routes";
-import ThemeContextWrapper from "components/theme/themeWrapper";
 import ThemePlugin from "components/plugins/theme/theme.plugin";
+import { Col, Container, Row } from "reactstrap";
+import Linkbox from "components/plugins/linkbox/linkbox.plugin";
 
 
-var ps;
+let testing = [
+  {type:"at", name:"my tag", url:"@testacc", show: true},
+  {type:"instagram", name:"my insta", url:"https://instagram.com/"},
+  {type:"github", name:"my git", url:"https://github.com/", show: true},
+  {type:"facebook", name:"my face", url:"https://facebook.com/"},
+  {type:"spotify", name:"my playlist", url:"https://spotify.com/"},
+ ];
 
 function Admin(props) {
   const mainPanelRef = React.useRef(null);
-  const getRoutes = (routes) => {
-    return routes.map((prop, key) => {
-      if (prop.layout === "/admin") {
-        return (
-          <Route
-            path={prop.layout + prop.path}
-            component={prop.component}
-            key={key}
-          />
-        );
-      } else {
-        return null;
-      }
-    });
-  };
   return (
         <React.Fragment>
-            <div ref={mainPanelRef}> {/* data={color} */}
-              {/* <Switch>
-                {getRoutes(routes)}
-                <Redirect from="*" to="/admin/dashboard" />
-              </Switch> */}
+            <div ref={mainPanelRef}>
+              <Container>
+                <Row>
+                  <Col xl="2" lg="2" />
+                  <Col xl="8" lg="8" md="12">
+                    {/* <Linkbox active={true}/> */}
+                    {
+                      testing.map((el) => {
+                        return(
+                          <Linkbox type={el.type} name={el.name} url={el.url} show={el.show}/>
+                        )
+                      })
+                    }
+                  </Col>
+                  <Col xl="2" lg="2"/>
+                </Row>
+              </Container>
             </div>
           <ThemePlugin />
         </React.Fragment>

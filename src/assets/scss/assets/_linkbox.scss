@@ -1,6 +1,16 @@
 @import "./variables";
 
 .form-linkbox {
+  & .row-full {
+    width: max-content;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: calc(var(--bs-gutter-y) * -1);
+    margin-right: calc(var(--bs-gutter-x) * -0.5);
+    margin-left: calc(var(--bs-gutter-x) * -0.5);
+  }
+  margin: 0.2em 0;
   font-weight: 600;
   //padding / margin
   padding: $form-padding;
@@ -12,13 +22,10 @@
   // Background
   border: 1px solid $border-gray;
 
-  // Border
-  border-left: 6pt solid $layout-blue;
-  border-radius: $input-radius;
+  border-radius: 25px;
 
   input[type="text"] {
     font-weight: 600;
-    background-color: $gray-300;
     color: black;
     line-height: $line-height;
     width: 100%;
@@ -29,6 +36,12 @@
       border: solid 2px darkcyan;
     }
   }
+  // input[type="color"] {
+  //   float: right;
+  //   padding: 0;
+  //   overflow: hidden;
+  //   border: none;
+  // }
 
   .form-submit {
     margin-top: 1em;

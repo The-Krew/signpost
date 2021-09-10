@@ -3,11 +3,13 @@
 .combo-slot {
   // padding: 5pt;
   height: 3em;
+  float: right;
 }
 
 .combo-control {
   height: $input-height;
   border-radius: $input-radius;
+  width: 86px;
 
   .combo-span {
     height: 100%;

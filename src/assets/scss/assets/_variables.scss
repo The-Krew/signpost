@@ -23,6 +23,7 @@ $font-color: #e6e6e6;
 // Color system
 
 $white: #ffffff !default;
+$dark: #0f0f1d !default;
 $gray-100: #f6f9fc !default;
 $gray-200: #e9ecef !default;
 $gray-300: #e3e3e3 !default;
@@ -268,3 +269,48 @@ $link-color: $primary !default;
 $link-decoration: none !default;
 $link-hover-color: darken($link-color, 15%);
 $link-hover-decoration: none !default;
+
+// Square size
+
+.s-1 {
+  width: 0.5em;
+  height: 0.5em;
+}
+
+.s-2 {
+  width: 1em;
+  height: 1em;
+}
+
+.s-3 {
+  width: 1.5em;
+  height: 1.5em;
+}
+.s-4 {
+  width: 2em;
+  height: 2em;
+}
+.s-5 {
+  width: 2.5em;
+  height: 2.5em;
+}
+.s-6 {
+  width: 3em;
+  height: 3em;
+}
+.s-7 {
+  width: 3.5em;
+  height: 3.5em;
+}
+.s-8 {
+  width: 4em;
+  height: 4em;
+}
+.s-9 {
+  width: 4.5em;
+  height: 4.5em;
+}
+.s-10 {
+  width: 5em;
+  height: 5em;
+}

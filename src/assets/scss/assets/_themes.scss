@@ -1,15 +1,30 @@
 .light-content {
   background: white;
+  color: black;
   background-image: url("../../img/webb.png");
   .form-linkbox {
     background-color: aqua;
+  }
+  .theme-plugin {
+    background: rgba(0, 0, 0, 0.4);
+    .dropdown-menu {
+      background: linear-gradient($gray-300, $gray-100);
+    }
   }
 }
 
 .dark-content {
   background: black;
+  color: white;
   background-image: url("../../img/webb-dark.png");
   .form-linkbox {
     background-color: green;
+  }
+  .theme-plugin {
+    background: rgba(255, 255, 255, 0.4);
+    .dropdown-menu {
+      color: white;
+      background: linear-gradient($gray-900, $gray-700);
+    }
   }
 }

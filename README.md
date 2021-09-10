@@ -3,6 +3,12 @@
  ---
 
 ## Updates
+* **version 0.1.5**
+```
+    + theme.plugin has been added.
+    * theme color scheme has been tweak.
+    * Admin layout now has theme dropdown selection.
+```
 * **version 0.1.4**
 ```
     + Added bootstrap

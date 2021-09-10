@@ -7,6 +7,8 @@ import PerfectScrollbar from "perfect-scrollbar";
 // import FixedPlugin from "components/FixedPlugin/FixedPlugin.js";
 
 import routes from "../../routes";
+import ThemeContextWrapper from "components/theme/themeWrapper";
+import ThemePlugin from "components/plugins/theme/theme.plugin";
 
 
 var ps;
@@ -36,7 +38,7 @@ function Admin(props) {
                 <Redirect from="*" to="/admin/dashboard" />
               </Switch> */}
             </div>
-          {/* <FixedPlugin bgColor={color} handleBgClick={changeColor} /> */}
+          <ThemePlugin />
         </React.Fragment>
   );
 }

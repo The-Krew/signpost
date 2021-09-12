@@ -1,8 +1,9 @@
+import Cookies from "js-cookie";
 import React, { useState, useEffect } from "react";
 import { ThemeContext, themes } from "../../contexts/themeContext";
-
 export default function ThemeContextWrapper(props) {
-  const [theme, setTheme] = useState(themes.light);
+  let temp = Cookies.get("theme") == "light"? themes.light : themes.dark;
+  const [theme, setTheme] = useState(temp);
 
   function changeTheme(theme) {
     setTheme(theme);
@@ -12,8 +13,9 @@ export default function ThemeContextWrapper(props) {
     switch (theme) {
       case themes.light:
           try {
-              document.body.classList.remove(themes.dark);
+            document.body.classList.remove(themes.dark);
           } catch {}
+        Cookies.set("theme", "light");
         document.body.classList.add(theme);
         break;
       case themes.dark:
@@ -21,6 +23,7 @@ export default function ThemeContextWrapper(props) {
         try {
             document.body.classList.remove(themes.light);
         } catch {}
+        Cookies.set("theme", "dark");
         document.body.classList.add(theme);
         break;
     }

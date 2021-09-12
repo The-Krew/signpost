@@ -6,7 +6,11 @@ import ComboBox from "./comboBox.";
 
 
 function Linkbox(props){
-    const [color, setColor] = React.useState(null);
+    const [url, setUrl] = React.useState(true);
+    const handleUrl = () => {
+        setUrl(!url);
+        console.log(url);
+    };
     let active =  props.active;
     return (
         <>
@@ -62,11 +66,7 @@ function Linkbox(props){
                                         <Row>
                                             <ComboBox />
                                         </Row>
-                                        {/* <Row>
-                                            <Col>
-                                                <input className="s-6 border-round"type="color" value={color} onChange={e => setColor(e.target.value)} style={{background: color}}/>
-                                            </Col>
-                                        </Row> */}
+            
                                     </Col>
                                     <Col md="4" sm="10" xs="10">
                                         <input type="text" placeholder="Name"/>
@@ -79,7 +79,10 @@ function Linkbox(props){
                                         </Row>
                                         <Row>
                                             <Col>
-                                                <button type='submit' className="form-submit" >Přidat</button>
+                                                <input type="checkbox" defaultChecked onChange={() => handleUrl()}/> <span> Show url</span>
+                                            </Col>
+                                            <Col>
+                                                <button type='submit' className="form-submit" >Add</button>
                                             </Col>
                                         </Row>
                                     </Col>

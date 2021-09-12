@@ -10,6 +10,24 @@ let testing = [
   {type:"github", name:"my git", url:"https://github.com/", show: true},
   {type:"facebook", name:"my face", url:"https://facebook.com/"},
   {type:"spotify", name:"my playlist", url:"https://spotify.com/"},
+  {type:"spotify", name:"my playlist", url:"https://spotify.com/"},
+  {type:"spotify", name:"my playlist", url:"https://spotify.com/"},
+  {type:"spotify", name:"my playlist", url:"https://spotify.com/"},
+  {type:"spotify", name:"my playlist", url:"https://spotify.com/"},
+  {type:"spotify", name:"my playlist", url:"https://spotify.com/"},
+  {type:"spotify", name:"my playlist", url:"https://spotify.com/"},
+  {type:"spotify", name:"my playlist", url:"https://spotify.com/"},
+  {type:"spotify", name:"my playlist", url:"https://spotify.com/"},
+  {type:"spotify", name:"my playlist", url:"https://spotify.com/"},
+  {type:"spotify", name:"my playlist", url:"https://spotify.com/"},
+  {type:"spotify", name:"my playlist", url:"https://spotify.com/"},
+  {type:"spotify", name:"my playlist", url:"https://spotify.com/"},
+  {type:"spotify", name:"my playlist", url:"https://spotify.com/"},
+  {type:"spotify", name:"my playlist", url:"https://spotify.com/"},
+  {type:"spotify", name:"my playlist", url:"https://spotify.com/"},
+  {type:"spotify", name:"my playlist", url:"https://spotify.com/"},
+  {type:"spotify", name:"my playlist", url:"https://spotify.com/"},
+  {type:"spotify", name:"my playlist", url:"https://spotify.com/"},
  ];
 
 function Admin(props) {
@@ -21,7 +39,7 @@ function Admin(props) {
                 <Row>
                   <Col xl="2" lg="2" />
                   <Col xl="8" lg="8" md="12">
-                    {/* <Linkbox active={true}/> */}
+                    <Linkbox active={true}/>
                     {
                       testing.map((el) => {
                         return(

@@ -48,7 +48,7 @@ const ComboBox = () => {
 
     return (
         <>
-            <form>
+            <form style={{color: "black"}}>
                 <Select
                     components={{ Control: CustomeControl, SingleValue: customSingleValue }}
                     isSearchable

@@ -3,6 +3,13 @@
  ---
 
 ## Updates
+* **Version 0.1.7**
+```
+    + new background patterns added.
+    + color palette has been added.
+    * dark / light theme colors fixed.
+    * linkbox added way to show and hide url.
+```
 * **version 0.1.6**
 ```
     + public/full/ has been added.

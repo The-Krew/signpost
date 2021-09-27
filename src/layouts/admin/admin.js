@@ -4,44 +4,35 @@ import { Col, Container, Row } from "reactstrap";
 import Linkbox from "components/plugins/linkbox/linkbox.plugin";
 
 
-let testing = [
-  {type:"at", name:"my tag", url:"@testacc", show: true},
-  {type:"instagram", name:"my insta", url:"https://instagram.com/"},
-  {type:"github", name:"my git", url:"https://github.com/", show: true},
-  {type:"facebook", name:"my face", url:"https://facebook.com/"},
-  {type:"spotify", name:"my playlist", url:"https://spotify.com/"},
-  {type:"spotify", name:"my playlist", url:"https://spotify.com/"},
-  {type:"spotify", name:"my playlist", url:"https://spotify.com/"},
-  {type:"spotify", name:"my playlist", url:"https://spotify.com/"},
-  {type:"spotify", name:"my playlist", url:"https://spotify.com/"},
-  {type:"spotify", name:"my playlist", url:"https://spotify.com/"},
-  {type:"spotify", name:"my playlist", url:"https://spotify.com/"},
-  {type:"spotify", name:"my playlist", url:"https://spotify.com/"},
-  {type:"spotify", name:"my playlist", url:"https://spotify.com/"},
-  {type:"spotify", name:"my playlist", url:"https://spotify.com/"},
-  {type:"spotify", name:"my playlist", url:"https://spotify.com/"},
-  {type:"spotify", name:"my playlist", url:"https://spotify.com/"},
-  {type:"spotify", name:"my playlist", url:"https://spotify.com/"},
-  {type:"spotify", name:"my playlist", url:"https://spotify.com/"},
-  {type:"spotify", name:"my playlist", url:"https://spotify.com/"},
-  {type:"spotify", name:"my playlist", url:"https://spotify.com/"},
-  {type:"spotify", name:"my playlist", url:"https://spotify.com/"},
-  {type:"spotify", name:"my playlist", url:"https://spotify.com/"},
-  {type:"spotify", name:"my playlist", url:"https://spotify.com/"},
- ];
 
 function Admin(props) {
+  const [loaded, setLoaded] = React.useState(false);
+  const [slots, setSlots] = React.useState([]);
+
+  const handelNewSlot = (newOption) => {
+    console.log(newOption);
+    console.log(slots);
+    let newArray = slots;
+    newArray.push(newOption);
+    setSlots(newArray);
+  }
+  const handleOnload = () => {
+    let input = [{type: 'discord', name: 'Testing Input', url: 'https://Testing.url', show: true}, {type: 'facebook', name: 'Testing Input', url: 'https://Testing.url', show: false}];
+    setSlots(input);
+    setLoaded(true);
+  }
   const mainPanelRef = React.useRef(null);
   return (
         <React.Fragment>
+            {loaded? null: handleOnload()}
             <div ref={mainPanelRef}>
               <Container>
                 <Row>
                   <Col xl="2" lg="2" />
                   <Col xl="8" lg="8" md="12">
-                    <Linkbox active={true}/>
+                    <Linkbox active={true} handelNewSlot={handelNewSlot}/>
                     {
-                      testing.map((el) => {
+                      slots.map((el) => {
                         return(
                           <Linkbox type={el.type} name={el.name} url={el.url} show={el.show}/>
                         )

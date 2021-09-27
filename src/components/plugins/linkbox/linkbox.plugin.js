@@ -6,11 +6,17 @@ import ComboBox from "./comboBox.";
 
 
 function Linkbox(props){
-    const [url, setUrl] = React.useState(true);
+    const [show, setShow] = React.useState(true);
+    const [type, setType] = React.useState("");
+    const handleSubmit = () => {
+        let name = document.getElementById("name").value;
+        let url = document.getElementById("url").value;
+        props.handelNewSlot({type:type, name:name, url:url, show:show});
+    }
     const handleUrl = () => {
-        setUrl(!url);
-        console.log(url);
+        setShow(!show);
     };
+     
     let active =  props.active;
     return (
         <>
@@ -64,17 +70,17 @@ function Linkbox(props){
                                     <Row>
                                     <Col xl="2" lg="2" md="2" sm="2" xs="2">
                                         <Row>
-                                            <ComboBox />
+                                            <ComboBox setValue={setType}/>
                                         </Row>
             
                                     </Col>
                                     <Col md="4" sm="10" xs="10">
-                                        <input type="text" placeholder="Name"/>
+                                        <input type="text" placeholder="Name" id="name"/>
                                     </Col>
                                     <Col xl="6" lg="5" md="6">
                                         <Row>
                                             <Col>
-                                                <input type="text" placeholder="URL"/>
+                                                <input type="text" placeholder="URL" id="url"/>
                                             </Col>
                                         </Row>
                                         <Row>
@@ -82,7 +88,7 @@ function Linkbox(props){
                                                 <input type="checkbox" defaultChecked onChange={() => handleUrl()}/> <span> Show url</span>
                                             </Col>
                                             <Col>
-                                                <button type='submit' className="form-submit" >Add</button>
+                                                <button type='button' className="form-submit" onClick={() => handleSubmit()}>Add</button>
                                             </Col>
                                         </Row>
                                     </Col>

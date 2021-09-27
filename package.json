@@ -1,6 +1,6 @@
 {
   "name": "signpost",
-  "version": "0.1.7",
+  "version": "0.1.8",
   "private": true,
   "dependencies": {
     "@heroicons/react": "^1.0.4",

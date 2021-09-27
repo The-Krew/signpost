@@ -1,8 +1,20 @@
 # Signpost
 ## Created by TheKrew
+## Contributors
+- **KopyTKG** 
+  - [Github](https://github.com/KopyTKG)
+- **D4vEOFF** 
+  - [Github](https://github.com/D4vEOFF)
  ---
 
 ## Updates
+* **Version 0.1.8**
+```
+    * Combobox now has Onchange handler
+    * linkbox now has "onSubmit" event (for testing it is onClick later will be onSubmit)
+    + Admin layout has been changed. Now supports Load event and newSlot event. Needed for API.
+    ! Next step will be API
+```
 * **Version 0.1.7**
 ```
     + new background patterns added.

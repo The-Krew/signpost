@@ -2,7 +2,7 @@ import Cookies from "js-cookie";
 import React, { useState, useEffect } from "react";
 import { ThemeContext, themes } from "../../contexts/themeContext";
 export default function ThemeContextWrapper(props) {
-  let temp = Cookies.get("theme") == "light"? themes.light : themes.dark;
+  let temp = Cookies.get("theme") === "light"? themes.light : themes.dark;
   const [theme, setTheme] = useState(temp);
 
   function changeTheme(theme) {

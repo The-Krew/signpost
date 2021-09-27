@@ -1,20 +1,20 @@
+import React from "react";
 import Select, { components } from "react-select";
 import { At, Discord, Drive, Facebook, Github, Gmail, Instagram, LinkedIn, Messenger, Patreon, Pinterest, Private, Reddit, Site, Snapchat, Spotify, Steam, Telegram, Tiktok, Twitch, Twitter, Ubisoft, Vercel, Vimeo, Youtube } from "../../../assets/@svg/react/solid"
-import { Col, Row } from "reactstrap";
 
-const ComboBox = () => {
+const ComboBox = (props) => {
     const CustomeControl = props => (
         <div className="combo-slot">
             <components.Control {...props} className="combo-control" style={{borderRadius: 4}} />
         </div>
     );
+    const handleChange = (selectedOption) => {
+        props.setValue((selectedOption.value).toLowerCase());
+    }
 
     const customSingleValue = ({ data }) => (
         <>
             {data.icon}
-            {/* <span className="combo-text">
-                {data.label}
-            </span> */}
         </>
     );
     let width = "25px";
@@ -52,7 +52,9 @@ const ComboBox = () => {
                 <Select
                     components={{ Control: CustomeControl, SingleValue: customSingleValue }}
                     isSearchable
-                    defaultValue={statusOptions[0]}
+                    id="select"
+                    defaultValue={null}
+                    onChange={handleChange}
                     options={statusOptions}
                     theme={theme => ({
                         ...theme,

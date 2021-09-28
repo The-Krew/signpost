@@ -10,14 +10,18 @@ function Admin(props) {
   const [slots, setSlots] = React.useState([]);
 
   const handelNewSlot = (newOption) => {
-    console.log(newOption);
-    console.log(slots);
     let newArray = slots;
     newArray.push(newOption);
     setSlots(newArray);
   }
   const handleOnload = () => {
-    let input = [{type: 'discord', name: 'Testing Input', url: 'https://Testing.url', show: true}, {type: 'facebook', name: 'Testing Input', url: 'https://Testing.url', show: false}];
+    let input = [
+      {type: 'github', name: 'My github', url: 'https://github.com/kopytkg', show: false},
+      {type: 'facebook', name: 'Profile', url: 'https://www.facebook.com/Kopyy', show: false},
+      {type: 'instagram', name: 'Nothing interesting', url: 'https://www.instagram.com/kopy_the_krew/', show: false},
+      {type: 'discord', name: 'The Krew', url: 'https://discord.gg/ZtjNUMHm8C', show: false}
+
+    ];
     setSlots(input);
     setLoaded(true);
   }
@@ -30,7 +34,7 @@ function Admin(props) {
                 <Row>
                   <Col xl="2" lg="2" />
                   <Col xl="8" lg="8" md="12">
-                    <Linkbox active={true} handelNewSlot={handelNewSlot}/>
+                    {/* <Linkbox active={true} handelNewSlot={handelNewSlot}/> */}
                     {
                       slots.map((el) => {
                         return(

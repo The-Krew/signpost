@@ -1,13 +1,61 @@
-# Signpost
-## Created by TheKrew
-## Contributors
-- **KopyTKG** 
-  - [Github](https://github.com/KopyTKG)
-- **D4vEOFF** 
-  - [Github](https://github.com/D4vEOFF)
- ---
+## How to use
+
+*   ***src/links/links.js***
+    *   Folder stores you sites
+    *   to set sites export needs to be array of objects
+
+```js
+// like this
+export default [
+      {type: 'github', name: 'My github', url: 'https://github.com/kopytkg', show: false},
+      {type: 'facebook', name: 'Profile', url: 'https://www.facebook.com/Kopyy', show: false},
+      {type: 'instagram', name: 'Nothing interesting', url: 'https://www.instagram.com/kopy_the_krew/', show: false},
+      {type: 'discord', name: 'The Krew', url: 'https://discord.gg/ZtjNUMHm8C', show: false}
+];
+```
+### link object
+1) type
+* types are preset in svg loader
+  
+at | 
+discord |
+drive  |
+facebook  |
+github  |
+gmail  |
+instagram  |
+linkedin  |
+messenger  |
+patreon  |
+pinterest  |
+private  |
+reddit  |
+site  |
+snapchat  |
+spotify  |
+steam  |
+telegram  |
+tiktok  |
+twitch  |
+twitter  |
+ubisoft  |
+vercel  |
+vimeo  |
+youtube   |
+1) name
+* name can be set by the user
+2) link
+* link has to be set by the user
+3) url
+* is a boolean. True - show the url under name / False - hides url
+---
 
 ## Updates
+* **Version 0.1.9**
+  * Version set to static
+```
+    + links/links.js file to store links
+```
 * **Version 0.1.8**
 ```
     * Combobox now has Onchange handler

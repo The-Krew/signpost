@@ -2,6 +2,7 @@ import React from "react";
 import ThemePlugin from "components/plugins/theme/theme.plugin";
 import { Col, Container, Row } from "reactstrap";
 import Linkbox from "components/plugins/linkbox/linkbox.plugin";
+import input from "../../links/links";
 
 
 
@@ -15,13 +16,6 @@ function Admin(props) {
     setSlots(newArray);
   }
   const handleOnload = () => {
-    let input = [
-      {type: 'github', name: 'My github', url: 'https://github.com/kopytkg', show: false},
-      {type: 'facebook', name: 'Profile', url: 'https://www.facebook.com/Kopyy', show: false},
-      {type: 'instagram', name: 'Nothing interesting', url: 'https://www.instagram.com/kopy_the_krew/', show: false},
-      {type: 'discord', name: 'The Krew', url: 'https://discord.gg/ZtjNUMHm8C', show: false}
-
-    ];
     setSlots(input);
     setLoaded(true);
   }

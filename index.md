@@ -1,12 +1,4 @@
-# Signpost
-Signpost is an open source project created for self hosting of website like **linktr.ee**
 
-Project was created by:
-* KopyTKG
-  * [Github](https://github.com/kopytkg)
-* D4vEOFF
-  * [Github](https://github.com/D4vEOFF)
----
 
 ## Versions
 
@@ -18,3 +10,15 @@ Project has two version
   * Site is conneted to API backend, that stores all data about sites
   * [Brach Live-API](https://github.com/The-Krew/signpost/tree/Live-API)
   * [API]()
+
+---
+## Build by
+
+Signpost is an open source project created for self hosting of website like **linktr.ee**
+
+Project was created by:
+* KopyTKG
+  * [Github](https://github.com/kopytkg)
+* D4vEOFF
+  * [Github](https://github.com/D4vEOFF)
+---

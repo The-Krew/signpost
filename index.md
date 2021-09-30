@@ -3,11 +3,11 @@
 ## Versions
 
 Project has two version
-* Static
+### **Static Version**
   * Sites are stored in code of the site
   * [Brach Live-Static](https://github.com/The-Krew/signpost/tree/Live-Static)
-* API
-  * Site is conneted to API backend, that stores all data about sites
+### **API Version**
+  * Site is connected to API backend, that stores all data about sites
   * [Brach Live-API](https://github.com/The-Krew/signpost/tree/Live-API)
   * [API]()
 
@@ -19,6 +19,8 @@ Signpost is an open source project created for self hosting of website like **li
 Project was created by:
 * KopyTKG
   * [Github](https://github.com/kopytkg)
+  * [Organization]()
 * D4vEOFF
   * [Github](https://github.com/D4vEOFF)
+
 ---

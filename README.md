@@ -12,6 +12,8 @@ Project was created by:
 
 Project has two version
 * #### Static
+  * **Releases**
+  * [nd-st v0.1.9](https://github.com/The-Krew/releases/tag/v0.1.9)
   * **update version 0.1.9**
   * Sites are stored in code of the site
   * [Brach Live-Static](https://github.com/The-Krew/signpost/tree/Live-Static)

@@ -15,8 +15,8 @@ export default [
 ```
 ### link object
 1) type
-* types are preset in svg loader
-  
+   1) types are preset in svg loader
+   2) the types are ->
 at | 
 discord |
 drive  |
@@ -42,12 +42,12 @@ ubisoft  |
 vercel  |
 vimeo  |
 youtube   |
-1) name
-* name can be set by the user
-2) link
-* link has to be set by the user
-3) url
-* is a boolean. True - show the url under name / False - hides url
+2) name
+   1) name can be set by the user
+3) link
+   1) link has to be set by the user
+4) url
+   1) is a boolean. True - show the url under name / False - hides url
 ---
 
 ## Updates

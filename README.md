@@ -11,12 +11,12 @@ Project was created by:
 ## Versions
 
 Project has two version
-* Static
-  * #### update version 0.1.9
+* #### Static
+  * **update version 0.1.9**
   * Sites are stored in code of the site
   * [Brach Live-Static](https://github.com/The-Krew/signpost/tree/Live-Static)
-* API
-  * #### update version 0.1.8
+* #### API
+  * **update version 0.1.8**
   * Site is conneted to API backend, that stores all data about sites
   * [Brach Live-API](https://github.com/The-Krew/signpost/tree/Live-API)
   * [API]()

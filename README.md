@@ -1,56 +1,49 @@
 ## How to use
 
-*   ***src/links/links.js***
-    *   Folder stores you sites
-    *   to set sites export needs to be array of objects
-
-```js
-// like this
-export default [
-      {type: 'github',    name: 'My github',  url: 'https://testing.com', show: false},
-      {type: 'facebook',  name: 'Profile',    url: 'https://tesying.com', show: false},
-      {type: 'instagram', name: 'The insta',  url: 'https://testing.com', show: false},
-      {type: 'discord',   name: 'The server', url: 'https://testing.com', show: false}
-];
+1) install all package
 ```
-### link object
-1) type
-   1) types are preset in svg loader
-   2) the types are ->
-at | 
-discord |
-drive  |
-facebook  |
-github  |
-gmail  |
-instagram  |
-linkedin  |
-messenger  |
-patreon  |
-pinterest  |
-private  |
-reddit  |
-site  |
-snapchat  |
-spotify  |
-steam  |
-telegram  |
-tiktok  |
-twitch  |
-twitter  |
-ubisoft  |
-vercel  |
-vimeo  |
-youtube   |
-2) name
-   1) name can be set by the user
-3) link
-   1) link has to be set by the user
-4) url
-   1) is a boolean. True - show the url under name / False - hides url
+npm install
+```
+2) go to src/custom/
+3) edit files
+   1) profile.info.js
+   
+    ```js
+    // edit "./logo.png" to name of your file
+    import logo from "./logo.png";
+    
+    //and edit lines inside obj data
+    const data = {
+    img: logo,
+    user: "",
+    description: "",
+    background: "#fff"
+    }
+    ```
+
+    1) links.info.js
+   
+    ```js
+    // all needed info you have inside of that file
+    const data = [{
+        type: 'at',
+        name: 'template', 
+        url: 'custom url', 
+        show: true,
+        disclick: true
+    }];
+    ``` 
+
 ---
 
 ## Updates
+* **Version 0.2.0**
+  * Profile added
+```
+    + profile.plugin.js added
+    * links.info.js - how to use info added
+    + profile.info.js - added with how to use info.
+```
 * **Version 0.1.9**
   * Version set to static
 ```

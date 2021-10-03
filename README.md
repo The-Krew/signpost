@@ -13,8 +13,8 @@ Project was created by:
 Project has two version
 * #### Static
   * **Releases**
-  * [nd-st v0.1.9](https://github.com/The-Krew/signpost/releases/tag/v0.1.9) (Non docker)
-  * **update version 0.1.9**
+  * [nd-st v0.2.0](https://github.com/The-Krew/signpost/releases/tag/v0.2.0) (Non docker)
+  * **update version 0.2.0**
   * Sites are stored in code of the site
   * [Brach Live-Static](https://github.com/The-Krew/signpost/tree/Live-Static)
 * #### API

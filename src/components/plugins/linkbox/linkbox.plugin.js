@@ -30,7 +30,7 @@ function Linkbox(props){
                                 >
                                     <Col xl="1"/>
                                     <Col xl="10" lg="12" md="12" sm="12" xs="12">
-                                        <form className='form-linkbox' onClick={() => { window.location.assign(props.url)}}>
+                                        <form className='form-linkbox' onClick={!props.disclick? () => { window.location.assign(props.url)}: null}>
                                             <Row>
                                             <Col xs="1" />
                                             <Col xs="2">

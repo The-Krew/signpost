@@ -1,13 +1,54 @@
-# Signpost
-## Created by TheKrew
-## Contributors
-- **KopyTKG** 
-  - [Github](https://github.com/KopyTKG)
-- **D4vEOFF** 
-  - [Github](https://github.com/D4vEOFF)
- ---
+## How to use
+
+1) install all package
+```
+npm install
+```
+2) go to src/custom/
+3) edit files
+   1) profile.info.js
+   
+    ```js
+    // edit "./logo.png" to name of your file
+    import logo from "./logo.png";
+    
+    //and edit lines inside obj data
+    const data = {
+    img: logo,
+    user: "",
+    description: "",
+    background: "#fff"
+    }
+    ```
+
+    1) links.info.js
+   
+    ```js
+    // all needed info you have inside of that file
+    const data = [{
+        type: 'at',
+        name: 'template', 
+        url: 'custom url', 
+        show: true,
+        disclick: true
+    }];
+    ``` 
+
+---
 
 ## Updates
+* **Version 0.2.0**
+  * Profile added
+```
+    + profile.plugin.js added
+    * links.info.js - how to use info added
+    + profile.info.js - added with how to use info.
+```
+* **Version 0.1.9**
+  * Version set to static
+```
+    + links/links.js file to store links
+```
 * **Version 0.1.8**
 ```
     * Combobox now has Onchange handler

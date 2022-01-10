@@ -7,7 +7,7 @@ function Discord(props, {width}) {
     stroke: "currentColor",
     width: props.width,
     className: props.className,
-    strokeWidth: 0.4
+    strokeWidth: 0
   })
   , /*#__PURE__*/React.createElement("path", {
     fill: "rgb(36.078431%,41.960784%,75.294118%)",

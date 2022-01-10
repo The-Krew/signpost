@@ -1,0 +1,17 @@
+.profile {
+  .profile-img {
+    background: black;
+    width: 8em;
+    height: 8em;
+    border-radius: 50%;
+  }
+  .profile-user {
+    line-height: 4em;
+    text-align: start !important;
+  }
+  .profile-description {
+    color: $gray-600;
+    height: 4em;
+    text-align: start !important;
+  }
+}
